@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://localhost:98/quadrigis/";
+$config['base_url']	= "http://localhost:98/qWebSite/";
 
 /*
 |--------------------------------------------------------------------------
