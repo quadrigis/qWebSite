@@ -35,7 +35,6 @@ class Current_User {
 			// this mutates (encrypts) the input password
 			$u_input = new Employee();
 			$u_input->password = $password;
-
 			// password match (comparing encrypted passwords)
 			if ($u->password == $u_input->password) {
 				unset($u_input);
