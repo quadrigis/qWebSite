@@ -30,16 +30,16 @@
 </div>
 
 <div class="banerContainer container">
-    <? echo $struct['banerContainer']->wartosc; ?>
+    <?php echo $struct['banerContainer']->wartosc; ?>
 </div>
 <div class="footerContainer container">
-    <? echo $struct['footerContainer']->wartosc; ?> 
+    <?php echo $struct['footerContainer']->wartosc; ?> 
     <a id="policy">
         <? echo $struct['policy']->wartosc; ?>
     </a></div>
 
 <div id="dialog" title="<? echo $struct['policy']->wartosc; ?>">
-    <p><? echo $struct['policyText']->wartosc; ?></p>
+    <p><?php echo $struct['policyText']->wartosc; ?></p>
 </div>
 
 
