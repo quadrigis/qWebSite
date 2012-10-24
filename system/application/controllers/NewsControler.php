@@ -19,6 +19,13 @@ class NewsControler extends Controller {
             }
         }
         
+        function dataTable()
+        {
+            $news = Doctrine::getTable('News')->findAll();
+            $data['model'] = $news;
+            $this->load->view('News/dataTable',$data);
+        }
+        
         function edit($id)
 	{
             $tmp = array(0 => '');

@@ -21,7 +21,7 @@
 	<script src="<?php echo base_url(); ?>system/js/jquery.validate.unobtrusive.min.js" type="text/javascript"> </script>
         
         <div id="bodyContainer">
-            <?php $this->load->view($main_content); ?>
+            <?php $this->load->view($mainContent); ?>
         </div>
     </body>
 </html>

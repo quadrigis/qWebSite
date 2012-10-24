@@ -6,6 +6,13 @@ class EmployeeControler extends Controller {
 	{
 		parent::Controller();	
 	}
+        
+        function dataTable()
+        {
+            $model = Doctrine::getTable('Employee')->findAll();
+            $data['model'] = $model;
+            $this->load->view('Employee/dataTable',$data);
+        }
 	        
         function edit($id)
 	{

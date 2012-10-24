@@ -8,13 +8,13 @@
     <div class="message"></div>
     <div class="accordion">
         <h3><a>Słowniki</a></h3>
-        <div id="dictionary"></div>
+        <div class="tables" id="dictionary" itemref="index.php/DictionaryControler/dataTable"></div>
         <h3><a>Pracownicy</a></h3>
-        <div id="employee"></div>
+        <div class="tables" id="employee" itemref="index.php/EmployeeControler/dataTable"></div>
         <h3><a>Stanowiska</a></h3>
-        <div id="job"></div>
+        <div class="tables" id="job" itemref="index.php/JobControler/dataTable"></div>
         <h3><a>Aktualności</a></h3>
-        <div id="news"></div>
+        <div class="tables" id="news" itemref="index.php/NewsControler/dataTable"></div>
     </div>
 </div>
 

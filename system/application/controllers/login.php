@@ -19,7 +19,7 @@ class Login extends Controller {
                         return;
 		}
                 
-                $data['main_content'] = 'Admin/index';
+                $data['mainContent'] = 'Admin/index';
 		$this->load->view('layout',$data);
 	}
         
@@ -44,7 +44,7 @@ class Login extends Controller {
 	}
 
 	public function authenticate() {
-	        return Current_User::login($this->input->post('login'),
+	        return CurrentUser::login($this->input->post('login'),
 	                                    $this->input->post('password'));
 	}
 }

@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($result as $row): ?>
+        <?php foreach ($model as $row): ?>
             <tr>
                 <td><?=$row->id?></td>
                 <td><?=$row->name?></td>

@@ -67,10 +67,12 @@ function Delete(link, id){
 }
 
 $(document).ready(function(){
-    $('#news').load(url + 'index.php/Admin/news');
-    $('#employee').load(url + 'index.php/Admin/employee');
-    $('#job').load(url + 'index.php/Admin/job');
-    $('#dictionary').load(url + 'index.php/Admin/dictionary');
+    
+    var tables = $('.tables');
+    for(var i = 0; i < tables.length; i++){
+        var tmp = $(tables[i]).attr('itemref');
+        $(tables[i]).load(url + tmp);
+    }
     
     $(".accordion").accordion({
         collapsible: true,

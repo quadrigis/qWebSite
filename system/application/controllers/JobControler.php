@@ -6,6 +6,13 @@ class JobControler extends Controller {
 	{
 		parent::Controller();	
 	}
+        
+        function dataTable()
+        {
+            $model = Doctrine::getTable('Job')->findAll();
+            $data['model'] = $model;
+            $this->load->view('Job/dataTable',$data);
+        }
 	
 	function edit($id)
 	{

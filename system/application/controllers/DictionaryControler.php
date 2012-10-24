@@ -7,6 +7,13 @@ class DictionaryControler extends Controller {
 		parent::Controller();	
 	}
         
+        function dataTable()
+        {
+            $model = Doctrine::getTable('Dictionary')->findAll();
+            $data['model'] = $model;
+            $this->load->view('Dictionary/dataTable',$data);
+        }
+        
 	function edit($id)
 	{
             if($id == 0){

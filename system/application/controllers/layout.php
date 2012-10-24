@@ -27,7 +27,7 @@ class Layout extends Controller {
                 if($reload){
                     $this->load->view('_layout', $data);
                 }else{
-                    $data['main_content'] = '_layout';
+                    $data['mainContent'] = '_layout';
                     $this->load->view('layout', $data);
                 }
 	}

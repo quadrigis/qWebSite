@@ -1,5 +1,5 @@
 <?php
-class Current_User {
+class CurrentUser {
 
 	private static $user;
 
